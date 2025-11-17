@@ -7,7 +7,7 @@ let videosCarregados = [];
 async function carregarVideos() {
   try {
     // Faz a requisição do arquivo JSON
-    const resposta = await fetch("../json's/tabela.json");
+    const resposta = await fetch("../json/tabela.json");
 
     // Verifica se a resposta foi bem-sucedida (status 200-299)
     if (!resposta.ok) {
