@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../landingpagecss/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="../landingpagejavascript/script.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    </header>
+    <header id="cabecalho">
+        <img id="logo" src="../landingpageimagens/logo_maior.png">
+        <nav id="menu">
+        <ul>
+            <li><a href="../landingpagehtml/index.html">Home</a></li>
+            <li><a href="../landingpagehtml/index.html">Notícias</a></li>
+            <li><a href="../landingpagehtml/contato.html">Contato</a></li>
+            
+        </ul>
+        </nav>
+    </header>
+    <div class="cadastro">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="cpfInput">CPF</label>
+                    <input type="text" class="form-control" id="cpfInput">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="nomeInput">Nome Completo</label>
+                    <input type="text" class="form-control" id="nomeInput">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="dtNascInput">Dt.Nascimento</label>
+                    <input type="date" class="form-control" id="dtNascInput">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="rgInput">RG</label>
+                    <input type="text" class="form-control" id="rgInput">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="emailInput">e-mail</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Informe o e-mail">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="cnfEmailInput">Confirme e-mail</label>
+                    <input type="email" class="form-control" id="cnfEmailInput">
+                </div>
+            </div>
+        </div>
+ 
+        <div class="row">
+            <div class="col-md-3 offset-md-0">
+                <label>Onde conheceu nosso site?</label>
+                <select class="form-control" id="formatacao">
+                    <option>Redes sociais</option>
+                    <option>Amigos/Familiares</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-3 offset-md-0">
+                <label class="radio-inline">
+                    <input type="radio" name="sexoInput" id="chk" value="masculino" checked /> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexoInput" id="chk" value="feminino" checked /> Feminino
+                </label>
+            </div>
+            <div class="col-md-8 offset-md-1">
+                <label> Qual a sua avaliação do nosso site?</label>
+                <p>Avaliação: 
+                    <input type="checkbox" id="chk" class="checkbox-item" value="administrativa"><i class="fa-solid fa-star"></i>
+                    <input type="checkbox" id="chk" class="checkbox-item" value="comercial"><i class="fa-solid fa-star"></i>
+                    <input type="checkbox" id="chk" class="checkbox-item" value="producao"><i class="fa-solid fa-star"></i>
+                    <input type="checkbox" id="chk" class="checkbox-item" value="manutencao"><i class="fa-solid fa-star"></i>
+                    <input type="checkbox" id="chk" class="checkbox-item" value="manutencao"><i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+        </div>
+        <button type="button" onclick="salvar()" class="btn btn-success">Sucesso</button>
+        <button type="button" onclick="cancelar()" class="btn btn-warning">Cancelar</button>
+    </div>
+
+    <footer id="cadastro">
+        <h2><p>Nosso Contato: (16)99999-9999</p></h2>
+        <h3><p>Siga-nos nas redes sociais:</p></h3>
+        <h3><p><a href="https://www.youtube.com/@cortesojeanluca" target="_blank">YouTube</a> | <a href="https://www.instagram.com/jeanluca/?igsh=cnZkaDB1Y2N2NGhl#" target="_blank">Instagram</a></p></h3>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

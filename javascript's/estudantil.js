@@ -1,0 +1,31 @@
+function salvar() {
+  const nome = document.getElementById("nome").value;
+  const ra = document.getElementById("ra") .value;
+  
+  if (nome && ra) {
+    alert("Cadastro Estudantíl Salvo!\nNome: " + nome + "\nRA: " + ra);
+  } else {
+    alert("Preencha os campos obrigatórios!");
+  }
+}
+
+function limpar() {
+  const inputs = document.querySelectorAll("#cadastroEstudantilForm input");
+  inputs.forEach(input => input.value = "");
+}
+
+
+
+// Faz o ENTER funcionar como TAB
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    const inputs = Array.from(document.querySelectorAll("input"));
+    const index = inputs.indexOf(document.activeElement);
+
+    if (index !== -1) {
+      event.preventDefault();
+      const next = inputs[index + 1];
+      if (next) next.focus();
+    }
+  }
+});

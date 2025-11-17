@@ -1,0 +1,109 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* remove rolagem do body */
+}
+
+.top-nav {
+  padding: 10px 0;
+  background:#F8BBD0;
+  border-bottom: 1px solid #E91E63;
+}
+
+.nav-item {
+  background: #C2185B;
+  color:#FFFFFF;
+}
+
+/* iframe ocupa a tela inteira (menos o menu topo) */
+.fullscreen-frame {
+  width: 100%;
+  height: calc(100vh - 70px);
+  border: none;
+}
+
+/* estilização opcional das bolinhas (números) */
+.nav-pills .page-link {
+  border-radius: 50%;
+  padding: 10px 15px;
+  margin: 0 4px;
+}
+
+.nav-pills .page-link.active {
+  background-color: #E91E63;
+  color: rgb(255, 255, 255);
+}
+
+/* ======== ESTILO PERSONALIZADO DAS ABAS ======== */
+
+.nav-custom .page-link {
+    background:rgba(255, 192, 203, 0.9);  /* roxo escuro transparente */
+    color: #880E4F;                     /* texto rosa claro */
+    border: 1px solid rgba(233, 30, 99, 0.4);
+    margin: 3px;
+    border-radius: 10px;
+    transition: .3s ease;
+    font-weight: 600;
+}
+
+/* Hover das abas */
+.nav-custom .page-link:hover {
+  background: rgba(244, 143, 177, 0.95); /* Rosa mais forte no hover */
+  color: white;
+  box-shadow: 0 0 10px #FFDDE2; /* Brilho Rosa Claro */
+}
+/* Aba ativa */
+.nav-custom .page-link.active {
+  background: #FF4081 !important; /* Rosa Pêssego / Coral (Contraste) */
+  color: white !important;
+  border-color: #FF4081;
+  box-shadow: 0 0 15px #FF80AB; /* Brilho Suave */
+}
+
+
+.session-container {
+  width: 100%;
+  padding: 30px;
+  /* Fundo com gradiente elegante (Rose Gold e Rosa Bebê) */
+  background: linear-gradient(135deg, #FFB6C1, #FFF0F5);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.6); /* Sombra Rosa Choque Suave */
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #880E4F; /* Texto Rosa Escuro (para leitura) */
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+  .session-container h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+  }
+
+  .session-container p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+  }
+
+  .logo-principal {
+    border-radius: 20px;
+    border: 2px solid rgba(255, 182, 193, 0.7); /* Light Pink Suave */
+    box-shadow: 0 0 15px rgba(255, 192, 203, 0.8); /* Brilho de Pink */
+    overflow: hidden;
+    animation: slideUp 0.8s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }

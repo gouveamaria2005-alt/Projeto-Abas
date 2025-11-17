@@ -1,0 +1,54 @@
+
+header#cabecalho {
+    background-color: bisque;
+    height: 5vw;
+    padding: 1vw;
+    
+}
+
+header#cabecalho img#logo {
+    position: absolute;
+    top: -15.5vh;
+    left: -4vw;
+}
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  text-transform: uppercase;
+  position: absolute;
+  top: -0.5vw;
+  left: 70vw;
+}
+
+nav#menu li {
+  display: inline-block;
+  background-color: rgb(252, 140, 164);
+  padding: 1vw;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+nav#menu li:hover {
+  background-color: #f10a76;
+}
+
+.fa-star {
+  color: gold;
+}
+
+footer#cadastro {
+  height: 30vh;
+  width: auto;
+  margin-top: 20vh;
+  background-color: rgb(204, 156, 248);
+  text-align: center;
+}
+a {
+  color: #f10a76;
+}

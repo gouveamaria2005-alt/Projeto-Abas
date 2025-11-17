@@ -1,0 +1,94 @@
+/* ======== FUNDO GERAL ======== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #1a001a; /* Roxo escuro elegante */
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+/* ======== CONTAINER PRINCIPAL ======== */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 40px 30px;
+    background: rgba(255, 80, 150, 0.75); /* Rosa neon translúcido */
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 45px rgba(255, 0, 140, 0.55);
+    border: 1px solid rgba(200, 0, 250, 0.35);
+    animation: fadeIn 1.3s ease forwards;
+    text-align: center;
+}
+
+/* ======== TÍTULO PRINCIPAL ======== */
+h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #fff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+    animation: glowPulse 2.8s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 20, 147, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 25px rgba(255, 80, 150, 1);
+    }
+}
+
+/* ======== BOX DO ENDEREÇO ======== */
+.location-box {
+    background: rgba(255, 150, 210, 0.25);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 150, 230, 0.35);
+    box-shadow: 0 0 25px rgba(255, 120, 200, 0.4);
+    animation: slideUp 1s ease;
+}
+
+.location-box h2 {
+    color: #ffe6f7;
+    margin: 0 0 8px;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(255, 200, 230, 0.8);
+}
+
+.location-box p {
+    color: #ffd6ed;
+    font-size: 17px;
+}
+
+
+/* ======== MAPA ======== */
+.map-wrapper {
+    width: 100%;
+    height: 450px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 40px rgba(255, 100, 180, 0.8);
+    animation: fadeIn 1.2s ease;
+}
+
+/* ======== ANIMAÇÕES ======== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.92); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(35px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
